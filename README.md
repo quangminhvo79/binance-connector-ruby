@@ -9,6 +9,7 @@ This is a lightweight library that works as a connector to [Binance public API](
 - Supported APIs:
     - `/api/*`
     - `/sapi/*`
+    - `/fapi/*`
     - Spot Websocket Market Stream
     - Spot User Data Stream
 - Inclusion of test cases and examples
@@ -68,7 +69,7 @@ Please find `examples` folder to check for more endpoints.
 
 ### Testnet
 
-While `/sapi/*` endpoints don't have testnet environment yet, `/api/*` endpoints can be tested in 
+While `/sapi/*` endpoints don't have testnet environment yet, `/api/*` endpoints can be tested in
 [Spot Testnet](https://testnet.binance.vision/). You can use it by changing the base URL:
 
 ```ruby
@@ -223,8 +224,6 @@ Binance requires `pong` for heartbeat, response is sent automatically.
 ## Limitation
 
 Futures and Vanilla Options APIs are not supported:
-
-  - `/fapi/*`
   - `/dapi/*`
   - `/vapi/*`
   -  Associated Websocket Market and User Data Streams
